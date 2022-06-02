@@ -1,4 +1,4 @@
-.Data {
+.HourCard {
   border-radius: 14px;
   border-color: rgb(50, 16, 145);
   border-width: 3px;
@@ -9,4 +9,11 @@
   font-weight: bold;
   width: fit-content;
   padding: 0.5rem 2.5rem;
+}
+.CardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Data {
+  border-radius:15px 
 }
