@@ -1,15 +1,16 @@
 import React from "react";
+import moment from "moment"
 import "./Cards.css"
 
-const HourCard = (props) => {
-  console.log (props)
+const HourCard = ({time,condition,temp_c}) => {
+  const dataFormatada = moment(time).format("HH:mm")
+  
   return (
    
     <div className="HourCard">
-      <p>15:00</p>
-      <p>{props.time}</p>
-      <img src={props.condition.icon}/>
-      <p>8C</p>
+      <p>{dataFormatada}</p>
+      <img src={condition.icon}/>
+      <p>{temp_c}°</p>
     </div>
   );
 };

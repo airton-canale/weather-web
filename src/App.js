@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import api from "./services/api";
 import HourCard from "./Component/HourCard";
+import HeaderCard from "./Component/HeaderCard";
 import "./App.css"
+import moment from "moment"
 
 const App = (props) => {
   const [data, setData] = useState();
@@ -20,11 +22,14 @@ const App = (props) => {
       });
   }, []);
 
-  console.log(data?.forecast.forecastday[0].hour);
-
+  console.log(data)
+  const dataFormatada = moment(data?.current.last_updated).format("DD/MM/YYYY - HH:mm")
   return (
     <div className="App">
-      <p className="Data"> Data: {data?.current.last_updated}</p>
+
+      <HeaderCard data={data}></HeaderCard>
+
+      <p className="Data"> Data: {dataFormatada}</p>
       {/* <img className="Image" src= "http://cdn.weatherapi.com/weather/64x64/night/248.png"/>
       <p>Temperatura: {data?.current.temp_c}.C </p>
       <p> Data:</p>
