@@ -1,4 +1,4 @@
-.HourCard {
+  .HourCard {
   border-radius: 14px;
   border-color: rgb(50, 16, 145);
   border-width: 3px;
@@ -9,11 +9,25 @@
   font-weight: bold;
   width: fit-content;
   padding: 0.5rem 2.5rem;
+  margin-bottom: 1rem;
 }
 .CardsWrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .Data {
-  border-radius:15px 
+  border-radius:15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+  .Data {
+      width: 100% !important;
+  }
+
+  .CardHeader{
+    width: 100% !important;
+  }
 }

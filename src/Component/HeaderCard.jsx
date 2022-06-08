@@ -2,6 +2,7 @@ import React from "react";
 import "./Cards.css"
 
 const  HeaderCard = ({data}) => {
+  console.log (data)
 
 return(
 <div className="CardHeader">

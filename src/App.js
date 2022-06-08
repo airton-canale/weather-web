@@ -6,7 +6,7 @@ import "./App.css"
 import moment from "moment"
 
 const App = (props) => {
-  const [data, setData] = useState();
+  const [dados, setDados] = useState();
 
   useEffect(() => {
     api
@@ -16,25 +16,25 @@ const App = (props) => {
           q: "Sao Marcos Rio Grande do Sul",
         },
       })
-      .then((response) => setData(response.data))
+      .then((response) => setDados(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
   }, []);
 
-  console.log(data)
-  const dataFormatada = moment(data?.current.last_updated).format("DD/MM/YYYY - HH:mm")
+  console.log(dados)
+  const dataFormatada = moment(dados?.current.last_updated).format("DD/MM/YYYY - HH:mm")
   return (
     <div className="App">
 
-      <HeaderCard data={data}></HeaderCard>
+      <HeaderCard data={dados}></HeaderCard>
 
       <p className="Data"> Data: {dataFormatada}</p>
       {/* <img className="Image" src= "http://cdn.weatherapi.com/weather/64x64/night/248.png"/>
       <p>Temperatura: {data?.current.temp_c}.C </p>
       <p> Data:</p>
       <p> </p> */}
-      <div className="CardsWrapper">{data?.forecast.forecastday[0].hour.map(HourCard)}</div>
+      <div className="CardsWrapper">{dados?.forecast.forecastday[0].hour.map(HourCard)}</div>
     </div>
   );
 };
