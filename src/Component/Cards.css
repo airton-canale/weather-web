@@ -14,6 +14,16 @@
   display: flex;
   flex-wrap: wrap;
 }
-.Data {
-  border-radius:15px 
+.Data_Loc {
+  border-radius: 14px;
+  border-color: rgb(50, 16, 145);
+  border-width: 3px;
+  border-style: solid;
+  background-color: rgb(229, 247, 253);
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.5rem 2.5rem;
+  border-radius:15px;
 }

@@ -32,7 +32,7 @@ const App = (props) => {
       <p className="Data"> Data: {dataFormatada}</p>
       {/* <img className="Image" src= "http://cdn.weatherapi.com/weather/64x64/night/248.png"/>
       <p>Temperatura: {data?.current.temp_c}.C </p>
-      <p> Data:</p>
+      <p> Data:</p
       <p> </p> */}
       <div className="CardsWrapper">{data?.forecast.forecastday[0].hour.map(HourCard)}</div>
     </div>
