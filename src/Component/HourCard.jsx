@@ -9,7 +9,7 @@ const HourCard = ({time,condition,temp_c}) => {
    
     <div className="HourCard">
       <p>{dataFormatada}</p>
-      <img src={condition.icon}/>
+      <img src={condition.icon} alt="icone de tempo"/>
       <p>{temp_c}°</p>
     </div>
   );
