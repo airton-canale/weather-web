@@ -4,25 +4,25 @@
 
 .Data {
   border-radius: 14px;
-  border-color: rgb(50, 16, 145);
+  border-color: #F0F0F7;
   border-width: 3px;
   border-style: solid;
-  background-color: rgb(229, 247, 253);
   text-align: center;
-  color: black;
+  color: #04D361;
   font-weight: bold;
   width: fit-content;
   padding: 0.5rem 2.5rem;
   margin-top:1rem;
   margin-bottom: 1rem;
+  background-color: #2d2344;
 }
 
 .CardHeader{
   border-radius: 14px;
-  border-color: rgb(50, 16, 145);
+  border-color: #F0F0F7;
   border-width: 3px;
   border-style: solid;
-  background-color: rgb(229, 247, 253);
+  background-color: #2d2344;
   text-align: center;
   color: black;
   font-weight: bold;
@@ -30,6 +30,8 @@
   padding: 0.5rem 2.5rem;
   margin: 0 auto;
   margin-top: 1rem;
+  color: #04D361;
+
 }
 
 .Region{

@@ -1,33 +1,27 @@
 .HourCard {
   border-radius: 14px;
-  border-color: rgb(50, 16, 145);
+  border-color: #6842c2;
   border-width: 3px;
   border-style: solid;
-  background-color: rgb(229, 247, 253);
+  color: #6842c2;
   text-align: center;
-  color: rgb(138, 179, 255); 
   font-weight: bold;
   width: fit-content;
   padding: 0.5rem 2.5rem;
   margin-bottom: 1rem;
+  background-color:#F0F0F7;
+  gap: 10px;
+  margin: 30px;
 }
 .CardsWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 800px;
+  padding: 30px;
   margin: 0 auto;
+  
 }
 .Data {
   border-radius:15px;
   margin: 0 auto;
-}
-@media screen and (max-width: 700px) {
-  .Data {
-      width: 100% !important;
-  }
-
-  .CardHeader{
-    width: 100% !important;
-  }
 }
