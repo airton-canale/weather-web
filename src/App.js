@@ -7,13 +7,31 @@ import moment from "moment"
 
 const App = (props) => {
   const [dados, setDados] = useState();
+  const [loc, setLoc] = useState();
+  const [erro, setErro] = useState();
+
+  var current_position;
+  useEffect(() => {
+    const appendLocation = ((localization) => {
+      var newloc;
+      var newloc = `${localization.coords.latitude},${localization.coords.longitude}`
+      setLoc(newloc)
+      console.log(newloc)
+    })
+    
+    if ('geolocation' in navigator) {
+      current_position = navigator.geolocation.getCurrentPosition(appendLocation)
+    } else {
+      alert('Geolocation API not supported.')
+    }
+  }, []);
 
   useEffect(() => {
     api
       .get("/forecast.json", {
         params: {
           key: "b35dd760809249e9b4f20009220206",
-          q: "Sao Marcos Rio Grande do Sul",
+          q: loc,
         },
       })
       .then((response) => setDados(response.data))
@@ -22,7 +40,11 @@ const App = (props) => {
       });
   }, []);
 
-  console.log(dados)
+  
+
+
+
+  // console.log(dados)
   const dataFormatada = moment(dados?.current.last_updated).format("DD/MM/YYYY - HH:mm")
   return (
     <div className="App">
