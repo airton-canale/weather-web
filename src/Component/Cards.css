@@ -25,3 +25,20 @@
   border-radius:15px;
   margin: 0 auto;
 }
+
+.CardError{
+  border-radius: 14px;
+  border-color: #6842c2;
+  border-width: 3px;
+  border-style: solid;
+  color: #6842c2;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0.5rem 2.5rem;
+  margin-bottom: 1rem;
+  background-color:#F0F0F7;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 150px;
+}

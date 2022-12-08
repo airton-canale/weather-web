@@ -1,5 +1,5 @@
 <p align="center">
-<img margin-left= "300px" src="./github/banner.png" alt="Banner">
+<img margin-left= "300px" src="./github/weather.png" alt="Banner">
 </p>  
 <h1 align="center"><strong></strong></h1>
 <h1 align="center"><strong>Weather Web</strong></h1>
@@ -16,30 +16,27 @@
 
 
 
-### this was my first project that i practiced my knowledge of ReactJS and consume API.
+### This was my first project that I used to practiced my knowledge of ReactJS and API consumption.
 
 <br>
 
 ## 💻 Project
 
 
-<p>This application shows my portfolio built in ReactJS.</p>
+<p>This application shows your current location and get the weather forecast for it.</p>
 
 <br>
-<img src="./github/interface.gif" alt="Readme Gif">
+<img src="./github/readme.gif" alt="Readme Gif">
 <br>
 <br>
 
 ## 🚀 Deploy
- -  https://airton-canale.github.io/interface-tailwind/
+ -  https://airton-canale.github.io/weather-web/
 
  - This application was deployed with Github Pages library 
 
 
  ```bash
-# Install library to deploy
-$ npm install -D gh-pages
-
 # Running deploy
 $ npm run deploy
 ```
@@ -51,9 +48,9 @@ $ npm run deploy
 
 ```bash
 # clone it
-$ git clone git@github.com:airton-canale/interface-tailwind.git
+$ git clone git@github.com:airton-canale/weather-web.git
 
-$ cd interface-tailwind
+$ cd weather-web
 
 # Install dependencies
 $ npm install
@@ -69,6 +66,5 @@ $ npm start
 This project was developed using the following technologies:
 
 - <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"> **React.JS**
-- <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"> **Tailwind**
-- <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"> **Typescript**
+- <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"> **JavaScript**
 - <img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"> **CSS**
