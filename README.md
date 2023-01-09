@@ -31,7 +31,7 @@
 <br>
 
 ## 🚀 Deploy
- -  https://airton-canale.github.io/weather-web/
+ -  https://weather.canale.dev/
 
  - This application was deployed with Github Pages library 
 
